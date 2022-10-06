@@ -24,55 +24,63 @@
         <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
         <!-- Already specified in the charset above-->
 
-    <title>Flexbox</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-size:2vw;
+            }
 
-    <style>
-        div {border: thin line black;}
-        * {box-sizing: border-box;}
-        .header {
-            //border: 1px solid red;
-            padding: 15 px;
-        }
-        .menu {
-            width: 25%;
-            float: left;
-            padding: 15px;
-            border: 1px solid red;
-        }
-        .main {
-            float: left;
-            width:50%;
-            padding: 15px;
-            border: 1px solid red;
-        }
-        .aside {
-            float: left;
-            width: 25%;
-            padding: 15 px;
-            border: 1px solid red;
-          }
-        .footer {
-            padding: 15px;
-            border: 1px solid red;
-        }
-    </style>
+            //div {border: thin dotted red;}
 
-    <!-- Warning about JavaScript, Cybersecurity Topic -->
-    <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
-    
-</head>
+            .header {
+                border: 1px solid green;
+                padding: 15px;
+            }
+
+            .menu {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
+            }
+
+            .main {
+                width: 50%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
+            }
+
+            .aside {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
+            }
+
+            .footer {}
+
+        </style>
+
+        <!-- Cyber Security Note about JavaScript in Browsers-->
+        <noscript>Running JavaScript is not necessary in this HTML page ... FYI: your Feature to execute scripts is turned off</noscript>
+
+    </head>
 
     <body>
         <div><header class="header"><h1>Flexbox Lesson</h1></header></div>
         <div><nav class="menu"><h1>Navigation</h1></nav></div>
-        <div><aside><a>This is the aside space.</a></aside></div>
-        <div><main><h1>Main Space</h1></main></div>
+        <div><main class="main"><h1>Main Space</h1></main></div>
+        <div>
+            <aside class="aside">
+                <a>This is the aside space.</a>
+                <br><br><br>
+            </aside>
+        </div>
         <div><section>Section</section></div>
         <div><article>Article</article></div>
         <div><footer></footer></div>
-    </body
-
-
+    </body>
 
     </body>
     <blockquote cite="https://www.brainyquote.com/quotes/willie_nelson_184361?src=t_positive"
